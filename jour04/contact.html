@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/laplateforme.css" rel="stylesheet" />
+  <script src="./assets/js/nav.js"></script>
+  <title>accueil</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="wrapped-title">
+      <h1 class="header-h1">La Plateforme Formation</h1>
+      <p class="header-p">
+        La Plateforme le campus méditerranéen du numérique ! Des parcours
+        frais de scolarité à zéro euros, ouverts à tous les talents, sans
+        conditions de ressources et de diplômes. Un lieu de rencontre entre
+        entreprises et apprenants pour le bénéfice de tous !
+      </p>
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <nav class="nav-menuHead">
+    <div class="menuHead" id="LaPlateformeNav">
+      <a title="LA PlateForme.io" class="img-link-laplateforme" href="/accueil.html"></a>
+      <a title="accueil" href="/accueil.html">accueil</a>
+      <a title="AI School" href="/ai-school.html">ai-school</a>
+      <a title="Coding School" href="/coding-school.html">coding-school</a>
+      <a title="Cyber Security School" href="/cyber-security-school.html">cyber-security-school</a>
+      <a title="Executive Education" href="/executive-education.html">executive-education</a>
+      <a title="Innovation Lab" href="/Innovation-Lab.html">Innovation-Lab</a>
+      <a title="Qui Sommes nous" href="/qui-sommes-nous.html">qui-sommes-nous</a>
+      <a title="Contact" href="/contact.html">contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="plateFormeNav()" menu>
+        menu
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <section class="content-contact">
+    <img src="/assets/images/HP_visual_light.webp" alt="HP Visuel" />
+    <div class="form">
+      <h2 class="h2-content">Contact</h2>
+
+      <p>Une question, une suggestion, laisse nous un message.</p>
+
+      <form action="/contact" method="post">
+        <ul class="form-contact">
+          <li class="list-contact">
+            <input list="prefixe" />
+
+            <datalist id="prefixe">
+              <option value="" selected="selected" class="gf_placeholder">
+                Prefixe.
+              </option>
+              <option value="Mr." class="gf_placeholder">Mr.</option>
+              <option value="Mme.">Mme.</option>
+              <option value="Mx.">Mx.</option>
+            </datalist>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom*" />
+            <input type="text" id="nom" name="nom" placeholder="Nom*" />
+          </li>
+          <li class="list-contact">
+            <input type="email" id="mail" name="mail" placeholder="E-mail*" />
+            <input type="tel" id="gsm" name="gsm" placeholder="Télèphone Mobile*" />
+          </li>
+          <li>
+            <input list="motif" />
+
+            <datalist id="motif">
+              <option value="" selected="selected" class="gf_placeholder">
+                Sélectionner un motif de contact*
+              </option>
+              <option value="candidatures">
+                Aide à l'orientation et informations sur les programmes
+              </option>
+              <option value="relations-entreprises">
+                Relations Entreprises
+              </option>
+              <option value="marketing">
+                Presse / Partenariat / Communication
+              </option>
+              <option value="administration">Suivi de candidatures</option>
+              <option value="recrutement RH">Recrutement RH</option>
+              <option value="taxe-apprentissage">Taxe d'apprentissage</option>
+              <option value="contact">Autre</option>
+            </datalist>
+          </li>
+          <li>
+            <textarea id="msg" name="message" placeholder="Votre Message*"></textarea>
+          </li>
+          <li>
+            Selon l'article L.223-2 du code de la consommation, il est rappelé
+            que le consommateur peut user de son droit à s'inscrire sur la
+            liste d'opposition au démarchage téléphonique
+            <a href="https://www.bloctel.gouv.fr/" target="_blank">bloctel : bloctel.gouv.fr</a>
+          </li>
+          <li class="list-contact">
+            <button class="button-contact" type="submit">Envoyer</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="old-footer">
+      <div class="old-footer-laplateforme">
+        <img src="assets/images/Logo_LaPLateforme_footer.svg" width="auto" height="auto" alt="Logo La Plateforme" />
+      </div>
+      <!-- LAPLATEFORME -->
+      <div>
+        <p>La Plateforme</p>
+        <p>
+          <a class="menu-items-footer" title="accueil" href="/accueil.html">accueil</a>
+        </p>
+        <p>
+          <a class="menu-items-footer" title="Qui Sommes nous" href="/qui-sommes-nous.html">qui-sommes-nous</a>
+        </p>
+      </div>
+      <!-- FORMATION -->
+      <div>
+        <p>Les Formations</p>
+        <p>
+          <a class="menu-items-footer" title="AI School" href="/ai-school.html">artificial intelligende school</a>
+        </p>
+        <p>
+          <a class="menu-items-footer" title="Coding School" href="/coding-school.html">coding school</a>
+        </p>
+        <p>
+          <a class="menu-items-footer" title="Cyber Security School" href="/cyber-security-school.html">cyber security
+            school</a>
+        </p>
+        <p>
+          <a class="menu-items-footer" title="Executive Education" href="/executive-education.html">executive
+            education</a>
+        </p>
+        <p>
+          <a class="menu-items-footer" title="Innovation Lab" href="/Innovation-Lab.html">Innovation Lab</a>
+        </p>
+      </div>
+      <!-- CONTACT -->
+      <div>
+        <p>Contact</p>
+        <p>8 rue d’hozier, 13002 Marseille</p>
+        <p>Tel : 04.84.89.43.69</p>
+        <p class="contact-button">
+          <a href="contact.html" title="Contact La Plateforme">Contact</a>
+        </p>
+      </div>
+    </div>
+    <span class="footer-copyright">© La Plateforme - Établissement d'enseignement supérieur technique
+      privé - Tous droits réservés. | Mentions légales | Cookies | Référent
+      handicap : Jessica Soriano</span>
+  </footer>
+</body>
+
+</html>

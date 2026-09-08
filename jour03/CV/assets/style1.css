@@ -1,0 +1,93 @@
+body#cv-body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #2c3e50;
+}
+
+#cv-header {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#cv-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cv-sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-photo {
+  max-width: 120px;
+  border-radius: 10%;
+  border: 3px solid #34495e;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list a {
+  color: #2c3e50;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: hotpink; 
+  text-decoration: underline;
+}
+
+#cv-main {
+  flex: 3;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.cv-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.cv-section:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #bdc3c7;
+  margin: 20px 0;
+}
+
+#cv-footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+

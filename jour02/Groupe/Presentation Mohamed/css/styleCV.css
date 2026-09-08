@@ -1,0 +1,84 @@
+body {
+	background-color: rgb(40, 40, 119);
+	color: white;
+}
+
+.mainContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+/* Left Container */
+.leftContainer {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.photo {
+	height: 17rem;
+	width: 16rem;
+}
+
+.infos {
+	margin-top: -1rem;
+	border-bottom: 2px solid white;
+}
+
+.experiences {
+	border-bottom: 2px solid white;
+}
+
+.langues {
+	border-bottom: 2px solid white;
+}
+
+/* Right Container */
+.rightContainer {
+	display: flex;
+	flex-direction: column;
+	color: black;
+}
+
+.presentation {
+	background-color: white;
+	padding: 0.5rem;
+}
+
+.competencesTitle {
+	color: white;
+}
+
+.competences {
+	background-color: white;
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	color: black;
+	text-align: center;
+}
+
+li {
+	margin-left: -1rem;
+	text-align: center;
+	text-align: left;
+}
+
+.softSkillsTitle {
+	color: white;
+}
+
+.softSkills {
+	background-color: white;
+	list-style-position: inherit;
+}
+
+.formationsTitle {
+	color: white;
+}
+
+.formations {
+	background-color: white;
+	list-style-position: inherit;
+}

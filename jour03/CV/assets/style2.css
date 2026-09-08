@@ -1,0 +1,97 @@
+body#cv-body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('./assets/img/bg-texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f4f4;
+}
+
+#cv-header {
+  background-color: rgba(0,0,0,0.7);
+  color: #00ffff;
+  text-align: center;
+  text-shadow: 0 0 5px #00ffff;
+  padding: 20px;
+  border-bottom: 3px solid #00ffff;
+}
+
+#cv-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cv-sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: rgba(255,255,255,0.1);
+  padding: 20px;
+  text-align: center;
+  border-right: 2px solid #00ffff;
+}
+#cv-sidebar h2{
+  color: #292109
+;
+}  
+
+#cv-sidebar a {
+  text-decoration: none;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);  
+
+}   
+
+.profile-photo {
+  max-width: 130px;
+  border-radius: 20%;
+  border: 2px solid #292109;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
+  color: #482929;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  color: rgb(42, 8, 8);
+  text-decoration: none;
+}
+#cv-main {
+  flex: 3;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.cv-section {
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #00ffff;
+  transition: transform 0.5s ease;
+}
+
+.cv-section:hover {
+  transform: scale(1.02);
+}
+
+.separator {
+  border: none;
+  border-top: 2px dashed #00ffff;
+  margin: 20px 0;
+}
+
+#cv-footer {
+  background-color: rgba(0,0,0,0.7);
+  color: #00ffff;
+  text-align: center;
+  padding: 10px;
+}
+

@@ -1,0 +1,397 @@
+/* ELEMENT */
+:root {
+    --text-body: rgb(0, 0, 0);
+    /* Couleur de police du corps de text */
+    --gradient-bg-body: linear-gradient(.25turn, rgba(254, 249, 249, 0.8), 10%, rgba(168, 162, 162, 0.8));
+    /* Gradient du fond d'écran */
+    --link-primary-color: rgb(255, 255, 255);
+    /* Couleur de lien primaire */
+    --link-active-primary-color: rgb(197, 197, 197);
+    /* Couleur de lien active primaire */
+    --link-hover-primary-color: rgb(87, 88, 88);
+    /* Couleur de lien survolé primaire */
+    --bg-image-hover-text: #ffffff;
+    /* Couleur de fond de la suppérposition d'image pour améliorer la visibilité de texte */
+    --title-color-class-hc-primary: rgb(5, 18, 204);
+    /* Couleur de text de la class hc-primary */
+    --wrapped-title-color-primary: rgb(5, 18, 204);
+    /* Couleur de text de la class color-primary */
+    --bg-image-cover-header: linear-gradient(rgba(255, 255, 255, 0.8), rgba(168, 162, 162, 0.8)), url("/assets/images/HP_visual_light.webp");
+    /* Image du header & dégrader du fond de la supperpossition d'image pour améliorer la visibilité du text */
+    --text-shadow-header: rgb(185, 179, 179) 2px 0 5px;
+    /* Couleur de l'ombrage du header */
+    --bg-color-menuHead: rgb(0, 0, 0);
+    /* Couleur de fonds du menu head */
+    --nav-menuHead-a-color: var(--link-primary-color);
+    /* Couleur de lien du menu head */
+    --nav-menuHead-a-active-color: var(--link-active-primary-color);
+    /* Couleur de lien survolé du menu head */
+    --nav-menuHead-a-hover-color: var(--link-hover-primary-color);
+    /* Couleur de lien survolé du menu head */
+    --link-footer-primary-color: var(--link-primary-color);
+    /* Footer: Couleur de lien primaire */
+    --link-footer-active-primary-color: var(--link-active-primary-color);
+    /* Couleur de lien active primaire */
+    --link-footer-hover-primary-color: var(--link-hover-primary-color);
+    /* Couleur de lien survolé primaire */
+    --text-decoration-footer-hover-link: none;
+    /* Text décoration des liens footer */
+    --bg-footer-copyright: black;
+    /* Couleur de fond du copyright */
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: block;
+    font-family: 'Arial';
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--gradient-bg-body);
+    background-size: cover;
+    color: var(--text-body);
+}
+
+a {
+    color: var(--link-primary-color);
+}
+
+a:active {
+    color: var(--link-active-primary-color);
+    text-decoration: dashed;
+}
+
+a:hover {
+    color: var(--link-hover-primary-color);
+    text-decoration: none;
+}
+
+header {
+    height: 455px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* padding-top: 170px; */
+    background: var(--bg-image-hover-text);
+    background: var(--bg-image-cover-header);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.in-article {
+    padding-bottom: 5px;
+}
+
+/*************************** CLASS ***************************/
+section h1 {
+    font-size: 32px;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+section h3 {
+    font-size: 28px;
+}
+
+section h4 {
+    font-size: 26px;
+}
+
+section h4 {
+    font-size: 24px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+.wrapped-title {
+    color: var(--wrapped-title-color-primary);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: var(--text-shadow-header);
+    font-size: x-large;
+    font-weight: 900;
+    z-index: 2;
+}
+
+.header-h1 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.header-p {
+    line-height: 1.6;
+}
+
+.nav-menuHead {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-color-menuHead);
+    z-index: 1000;
+}
+
+.menuHead {
+    list-style-type: none;
+    font-weight: 900;
+    text-transform: capitalize;
+    overflow: hidden;
+    margin: auto;
+}
+
+.menuHead .img-link-laplateforme {
+    background-image: url("/assets/images/logo_laplateforme_bleu3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.menuHead img {
+    float: left;
+}
+
+.menuHead a {
+    float: left;
+    display: block;
+    color: var(--nav-menuHead-a-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+    margin-top: 2px;
+}
+
+.menuHead a:hover {
+    float: left;
+    display: block;
+    color: var(--nav-menuHead-a-hover-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.menuHead a:active {
+    float: left;
+    display: block;
+    color: var(--nav-menuHead-a-active-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.menuHead .icon {
+    display: none;
+}
+
+.menuHead .icon-menu {
+    float: right;
+    background-image: url("/assets/icons/menu-svgrepo-com.svg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+    padding: 1rem;
+}
+
+.in-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto;
+    color: black;
+}
+
+/****************************** CLASS **********************************/
+.content {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.content-home {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    gap: 10rem;
+    padding: 1rem;
+}
+.content-contact {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.form-contact {
+    list-style: none;
+}
+
+.form-contact input {
+    height: 30px;
+    border-radius: 4px;
+    margin: 0.5rem;
+}
+
+.form-contact textarea {
+    height: 100px;
+    width: 90%;
+    border-radius: 4px;
+    margin: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+}
+
+.old-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+div.old-footer-laplateforme {
+    width: 500px;
+    margin: 1rem;
+}
+
+.menu-items-footer {
+    text-transform: capitalize;
+}
+
+.footer-copyright {
+    background-color: var(--bg-footer-copyright);
+}
+
+.contact-button {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+.contact-button:hover {
+    border: 0px;
+}
+
+.contact-button:hover::after {
+    content: " >";
+}
+
+.footer a {
+    color: var(--link-footer-primary-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--link-footer-hover-primary-color);
+    text-decoration: none;
+}
+
+.footer a:active {
+    color: var(--link-footer-active-primary-color);
+    text-decoration: none;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .old-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2px;
+        margin: auto;
+    }
+
+    .contact-button {
+        margin: 5px;
+    }
+
+    .menuHead a:not(:first-child) {
+        display: none;
+    }
+
+    .menuHead a.icon {
+        float: right;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .menuHead.responsive {
+        position: relative;
+    }
+
+    .menuHead.menuHead.responsive div.icon-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 15px;
+    }
+
+    .menuHead.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media (max-width:478px) {
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
